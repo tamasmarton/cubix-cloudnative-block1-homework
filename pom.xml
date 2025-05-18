@@ -52,6 +52,10 @@
 	</build>
 
 	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/tamasmarton/cubix-cloudnative-block1-homework</url>
+		</repository>
 		<snapshotRepository>
 			<id>github</id>
 			<url>https://maven.pkg.github.com/tamasmarton/cubix-cloudnative-block1-homework</url>
