@@ -65,7 +65,7 @@ jobs:
       run: docker login ghcr.io -u tamasmarton -p ${{ secrets.MAVEN_TOKEN }}
 
     - name: Build Docker image
-      run: docker build . -t ghcr.io/tamasmarton/cubix/1/homework/app:springboot
+      run: docker build . -t ghcr.io/tamasmarton/cubix-cloudnative-block1-homework/app:springboot
 
     - name: Push Docker image
-      run: docker push ghcr.io/tamasmarton/cubix/1/homework/app:springboot
+      run: docker push ghcr.io/tamasmarton/cubix-cloudnative-block1-homework/app:springboot
