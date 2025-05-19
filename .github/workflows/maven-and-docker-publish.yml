@@ -79,4 +79,4 @@ jobs:
       run: docker login ghcr.io -u tamasmarton -p ${{ secrets.MAVEN_TOKEN }}
 
     - name: Verify Docker image
-      run: sh verifyImage.sh
+      run: sh verify-image.sh
