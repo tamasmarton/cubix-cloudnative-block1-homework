@@ -69,3 +69,13 @@ jobs:
 
     - name: Push Docker image
       run: docker push ghcr.io/tamasmarton/cubix-cloudnative-block1-homework/app:springboot
+
+  verifyImage:
+    runs-on: ubuntu-latest
+    needs: docker
+    steps:
+    - name: Login to Docker
+      run: docker login ghcr.io -u tamasmarton -p ${{ secrets.MAVEN_TOKEN }}
+
+    - name: Verify Docker image
+      run: sh verifyImage.sh
