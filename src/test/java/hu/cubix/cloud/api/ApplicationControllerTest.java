@@ -11,7 +11,7 @@ class ApplicationControllerTest {
 
     @Test
     void defaultMessage() {
-        String defaultMessage = "default";
+        String defaultMessage = "This is a default message";
         ApplicationController controller = new ApplicationController(defaultMessage);
         CubixResponse response = controller.demoMessage("");
         assertThat(response.time(), is(notNullValue()));
